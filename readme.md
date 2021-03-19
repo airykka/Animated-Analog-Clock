@@ -10,7 +10,11 @@ This proh=ject was styled and animated using SASS, so if you have a SASS compile
 
 ## Quick Start/Installation
 
-If you want to see just see the Clock's movement, you can watch the video here:
+### Watch Video
+
+If you want to see just see the Clock's movement, you can watch the video here: [Clock-animation.Mov](https://github.com/airykka/Animated-Analog-Clock/blob/main/Clock%20Animation_Adanna.mov)
+
+### View Animation in Browser
 
 <!-- prettier-ignore -->
 * Clone the repo

@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #292a2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: Poppins, sans-serif;
+  color: beige;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.clock-frame {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  border: 0.5rem solid #292a2e;
+  background-image: url("../images/Adanna_ClockBG.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 15px 15px #202124, inset 0px 15px 15px #202124,
+    0px -15px 15px #2d2d31, inset 0px -15px 15px #2d2d31;
+  box-shadow: 0px 15px 15px #202124, inset 0px 15px 15px #202124,
+    0px -15px 15px #2d2d31, inset 0px -15px 15px #2d2d31;
+  position: relative;
+}
+
+.clock-frame .hour-hand {
+  height: 4.5rem;
+  width: 0.5rem;
+  background-color: #626258;
+  border-radius: 1rem;
+  position: absolute;
+  top: 15rem;
+  left: 14.8rem;
+  -webkit-animation: turnhr 43200s infinite linear;
+  animation: turnhr 43200s infinite linear;
+}
+
+.clock-frame .min-hand {
+  height: 7rem;
+  width: 0.5rem;
+  background-color: beige;
+  border-radius: 1rem;
+  position: absolute;
+  top: 15rem;
+  left: 14.8rem;
+  -webkit-animation: turnmin 3600s infinite linear;
+  animation: turnmin 3600s infinite linear;
+}
+
+.clock-frame .second-hand {
+  height: 9rem;
+  width: 0.2rem;
+  background-color: #ffbe0b;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 15rem;
+  left: 14.5rem;
+  -webkit-animation: turnsec 60s infinite linear;
+  animation: turnsec 60s infinite linear;
+}
+
+.clock-frame .circle {
+  height: 1.7rem;
+  width: 1.7rem;
+  background-color: #ffbe0b;
+  border-radius: 50%;
+  position: absolute;
+  top: 14.05rem;
+  left: 13.95rem;
+}
+
+@-webkit-keyframes turnhr {
+  0% {
+    -webkit-transform: rotate(210deg);
+    transform: rotate(210deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: rotate(570deg);
+    transform: rotate(570deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+@keyframes turnhr {
+  0% {
+    -webkit-transform: rotate(210deg);
+    transform: rotate(210deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: rotate(570deg);
+    transform: rotate(570deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+@-webkit-keyframes turnmin {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+@keyframes turnmin {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+@-webkit-keyframes turnsec {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}
+
+@keyframes turnsec {
+  0% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+    transform: rotate(540deg);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+}

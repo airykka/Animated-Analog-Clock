@@ -2,17 +2,17 @@
 
 > telling the time is easy peasy. Configuring a clock? Not so much :)
 
-An analog clock built with HTML, styled with SASS & animated with Vanilla CSS.
+An analog clock built with HTML, styled with SASS using the neomorphic UI design trend & animated with Vanilla CSS.
 
 ## Packages/Dependencies/Technologies
 
-This proh=ject was styled and animated using SASS, so if you have a SASS compiler, you should be just fine. However, If you dont, you can also find the compiled CSS file in the ../css folder.
+This project was styled and animated using SASS, so if you have a SASS compiler, you should be just fine. However, If you dont, you can also find the compiled CSS file in the ../css folder.
 
 ## Quick Start/Installation
 
 ### Watch Video
 
-If you want to see just see the Clock's movement, you can watch the video here: [Clock-animation.Mov](https://github.com/airykka/Animated-Analog-Clock/blob/main/Clock%20Animation_Adanna.mov)
+If you want to see just see the Clock's movement, you can watch it here: [Codepen](https://codepen.io/airykka/full/MWbRqYM) or download the video file here: [Clock-animation.Mov](https://github.com/airykka/Animated-Analog-Clock/blob/main/Clock%20Animation_Adanna.mov)
 
 ### View Animation in Browser
 

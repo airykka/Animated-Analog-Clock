@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -13,14 +13,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 62.5%;
 }
 
@@ -40,10 +40,8 @@ h1 {
   background-image: url("../images/Adanna_ClockBG.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0px 15px 15px #202124, inset 0px 15px 15px #202124,
-    0px -15px 15px #2d2d31, inset 0px -15px 15px #2d2d31;
-  box-shadow: 0px 15px 15px #202124, inset 0px 15px 15px #202124,
-    0px -15px 15px #2d2d31, inset 0px -15px 15px #2d2d31;
+  -webkit-box-shadow: 0px 15px 15px #202124, inset 0px 15px 15px #202124, 0px -15px 15px #2d2d31, inset 0px -15px 15px #2d2d31;
+          box-shadow: 0px 15px 15px #202124, inset 0px 15px 15px #202124, 0px -15px 15px #2d2d31, inset 0px -15px 15px #2d2d31;
   position: relative;
 }
 
@@ -53,10 +51,10 @@ h1 {
   background-color: #626258;
   border-radius: 1rem;
   position: absolute;
-  top: 15rem;
-  left: 14.8rem;
+  top: 10.5rem;
+  left: 14.75rem;
   -webkit-animation: turnhr 43200s infinite linear;
-  animation: turnhr 43200s infinite linear;
+          animation: turnhr 43200s infinite linear;
 }
 
 .clock-frame .min-hand {
@@ -65,10 +63,10 @@ h1 {
   background-color: beige;
   border-radius: 1rem;
   position: absolute;
-  top: 15rem;
-  left: 14.8rem;
-  -webkit-animation: turnmin 3600s infinite linear;
-  animation: turnmin 3600s infinite linear;
+  top: 8rem;
+  left: 14.75rem;
+  -webkit-animation: turn 3600s infinite linear;
+          animation: turn 3600s infinite linear;
 }
 
 .clock-frame .second-hand {
@@ -77,108 +75,79 @@ h1 {
   background-color: #ffbe0b;
   border-radius: 0.5rem;
   position: absolute;
-  top: 15rem;
-  left: 14.5rem;
-  -webkit-animation: turnsec 60s infinite linear;
-  animation: turnsec 60s infinite linear;
+  top: 6rem;
+  left: 14.9rem;
+  -webkit-animation: turn 60s infinite linear;
+          animation: turn 60s infinite linear;
 }
 
 .clock-frame .circle {
-  height: 1.7rem;
-  width: 1.7rem;
+  height: 1.8rem;
+  width: 1.8rem;
   background-color: #ffbe0b;
   border-radius: 50%;
   position: absolute;
-  top: 14.05rem;
-  left: 13.95rem;
+  top: 14.1rem;
+  left: 14.1rem;
+}
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+}
+
+@keyframes turn {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
 }
 
 @-webkit-keyframes turnhr {
   0% {
-    -webkit-transform: rotate(210deg);
-    transform: rotate(210deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
   }
   100% {
-    -webkit-transform: rotate(570deg);
-    transform: rotate(570deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
+    -webkit-transform: rotate(390deg);
+            transform: rotate(390deg);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
   }
 }
 
 @keyframes turnhr {
   0% {
-    -webkit-transform: rotate(210deg);
-    transform: rotate(210deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
   }
   100% {
-    -webkit-transform: rotate(570deg);
-    transform: rotate(570deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
+    -webkit-transform: rotate(390deg);
+            transform: rotate(390deg);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
   }
 }
-
-@-webkit-keyframes turnmin {
-  0% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-  100% {
-    -webkit-transform: rotate(540deg);
-    transform: rotate(540deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-}
-
-@keyframes turnmin {
-  0% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-  100% {
-    -webkit-transform: rotate(540deg);
-    transform: rotate(540deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-}
-
-@-webkit-keyframes turnsec {
-  0% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-  100% {
-    -webkit-transform: rotate(540deg);
-    transform: rotate(540deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-}
-
-@keyframes turnsec {
-  0% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-  100% {
-    -webkit-transform: rotate(540deg);
-    transform: rotate(540deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-  }
-}
+/*# sourceMappingURL=styles.css.map */

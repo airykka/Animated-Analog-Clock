@@ -40,8 +40,8 @@ h1 {
     background-color: #626258;
     border-radius: 1rem;
     position: absolute;
-    top: 15rem;
-    left: 14.8rem;
+    top: 10.5rem;
+    left: 14.75rem;
     animation: turnhr 43200s infinite linear;
   }
 
@@ -51,9 +51,9 @@ h1 {
     background-color: beige;
     border-radius: 1rem;
     position: absolute;
-    top: 15rem;
-    left: 14.8rem;
-    animation: turnmin 3600s infinite linear;
+    top: 8rem;
+    left: 14.75rem;
+    animation: turn 3600s infinite linear;
   }
 
   .second-hand {
@@ -62,54 +62,41 @@ h1 {
     background-color: #ffbe0b;
     border-radius: 0.5rem;
     position: absolute;
-    top: 15rem;
-    left: 14.5rem;
-    animation: turnsec 60s infinite linear;
+    top: 6rem;
+    left: 14.9rem;
+    animation: turn 60s infinite linear;
   }
 
   .circle {
-    height: 1.7rem;
-    width: 1.7rem;
+    height: 1.8rem;
+    width: 1.8rem;
     background-color: #ffbe0b;
     border-radius: 50%;
     position: absolute;
-    top: 14.05rem;
-    left: 13.95rem;
+    top: 14.1rem;
+    left: 14.1rem;
   }
 }
 
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+    transform-origin: bottom center;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: bottom center;
+  }
+}
 @keyframes turnhr {
   0% {
-    transform: rotate(210deg);
-    transform-origin: 0% 0%;
+    transform: rotate(30deg);
+    transform-origin: bottom center;
   }
 
   100% {
-    transform: rotate(570deg);
-    transform-origin: 0% 0%;
-  }
-}
-
-@keyframes turnmin {
-  0% {
-    transform: rotate(180deg);
-    transform-origin: 0% 0%;
-  }
-
-  100% {
-    transform: rotate(540deg);
-    transform-origin: 0% 0%;
-  }
-}
-
-@keyframes turnsec {
-  0% {
-    transform: rotate(180deg);
-    transform-origin: 0% 0%;
-  }
-
-  100% {
-    transform: rotate(540deg);
-    transform-origin: 0% 0%;
+    transform: rotate(390deg);
+    transform-origin: bottom center;
   }
 }
